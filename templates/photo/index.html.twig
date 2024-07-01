@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello!{% endblock %}
+
+{% block body %}
+    
+<div class="container">
+    <div class="bloc">
+       
+        <div>
+            <img class="picture"src="{{asset('img/Group 53.jpg')}}">
+            <img class="picture"src="{{asset('img/Group 54.jpg')}}">
+            <img class="picture"src="{{asset('img/Group 55.jpg')}}">
+            </div> 
+        
+        <div class="picture2">
+            <img class="picture"src="{{asset('img/Group 56.jpg')}}">
+            <img class="picture"src="{{asset('img/Group 57.jpg')}}">
+            <img class="picture"src="{{asset('img/Group 58.jpg')}}">
+        </div> 
+
+        <div>
+            <img class="picture"src="{{asset('img/Group 59.jpg')}}">
+            <img class="picture"src="{{asset('img/Group 60.jpg')}}">
+            <img class="picture"src="{{asset('img/Group 61.jpg')}}">
+        </div> 
+        <h5 class="text">TOI AUSSI <font color="#F05A24">MET DES COULEUR <br> SUR TA PHOTO DE PROFIL</font> EN<br> TELECHARGEANT LE CADRE<br> FORME AUX ECLES</h5>
+        <div class="lien">
+            <div><a href="{{ path('photo_upload_petite') }}"> petite</a></div>
+            <div><a href="{{ path('photo') }}"> moyenne</a></div> 
+            <div><a href="{{ path('photo_upload_grande') }}">grande</a></div>
+        </div>
+          <div><p class="keep">Nous ne conservons pas les photos transmises<br>pour respecter vos droits d'auteur.<br>Elles sont supprimées après traitement.</div>
+    </div> 
+         <div class="select"> {{ form_start(form) }}
+        {{ form_row(form.photo) }}</div>
+      <div> <button class="btn btn1">Telechage ta photo</button>
+       {{ form_end(form) }}</div>
+</div>
+     {% endblock %}
+
+    
