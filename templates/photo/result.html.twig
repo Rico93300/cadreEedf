@@ -7,8 +7,8 @@
         <a href="{{ path('photo') }}" class="btn btn3">Retourner à l'accueil</a>
         <a href="{{ path('photo_download', { filename: filename }) }}" class="btn btn2" download>Télécharger l'image</a>
     </div>
-    <div>
-        <img class="result" src="{{ asset('uploads/photos/' ~ filename) }}" alt="Final Image">
+    <div class="link">
+        <img src="{{ asset('uploads/photos/' ~ filename) }}" alt="Final Image">
     </div>
      </div>
 {% endblock %}

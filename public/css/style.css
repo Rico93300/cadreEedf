@@ -18,19 +18,16 @@
     color: aliceblue;
     
 }
-.btn1:hover,.btn2:hover {
+.btn1:hover,.btn3:hover,.btn3 {
     background-color: #29A3C0;
     color: aliceblue;
   
 }
-.btn2,.btn3:hover{
+.btn2,.btn2:hover{
     background-color: #F05A24;
     color: aliceblue;
 }
-.btn3{
-    background-color: #29A3C0;
-    color: aliceblue;
-}
+
 .bloc{
     float: left;
    
@@ -66,11 +63,10 @@
     left: 700px;
 }
 .link{
-    margin-left: 400px;
+    display: flex;
+    justify-content: center;
 }
-.result{
-   margin-left: 150px;
-}
+
 
 @media only screen and (max-width: 1200px){
     .lien {
@@ -102,7 +98,7 @@
         }
         .keep{
             position: relative;
-            top: 200px;
+            top: 300px;
             left: 170px;
         }
 }
